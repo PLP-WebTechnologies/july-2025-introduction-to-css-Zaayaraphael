@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Enhanced HTML5 Content & Forms</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="page">
+        <header>
+            <h1>HTML5 Assignment Page</h1>
+            <p>This page demonstrates lists, tables, media, and forms with HTML5.</p>
+        </header>
+
+        <!-- Lists Section -->
+        <section>
+            <h2>Favorite Programming Languages</h2>
+            <ul>
+                <li>Python</li>
+                <li>JavaScript</li>
+                <li>Java</li>
+                <li>C++</li>
+            </ul>
+
+            <h2>Steps to Build a Web Page</h2>
+            <ol>
+                <li>Plan the content</li>
+                <li>Write the HTML structure</li>
+                <li>Add styles with CSS</li>
+                <li>Enhance with interactivity if needed</li>
+            </ol>
+        </section>
+
+        <!-- Table Section -->
+        <section>
+            <h2>Student Grades Table</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Subject</th>
+                        <th>Grade</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Raphael</td>
+                        <td>Physics</td>
+                        <td>A</td>
+                    </tr>
+                    <tr>
+                        <td>Mary</td>
+                        <td>Mathematics</td>
+                        <td>B</td>
+                    </tr>
+                    <tr>
+                        <td>John</td>
+                        <td>Chemistry</td>
+                        <td>A</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Media Section -->
+        <section>
+            <h2>Media Content</h2>
+            <img src="https://via.placeholder.com/300" alt="Placeholder image" width="300">
+            <audio controls>
+                <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <video width="320" height="240" controls>
+                <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </section>
+
+        
+        <section>
+            <h2>Registration Form</h2>
+            <form>
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" required placeholder="Enter your name"><br><br>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required placeholder="Enter your email"><br><br>
+
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required minlength="6" placeholder="Minimum 6 characters"><br><br>
+
+                    <label for="age">Age:</label>
+                    <input type="number" id="age" name="age" min="1" max="120" required><br><br>
+
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" id="dob" name="dob" required><br><br>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Preferences</legend>
+                    <label for="country">Country:</label>
+                    <select id="country" name="country" required>
+                        <option value="">Select your country</option>
+                        <option value="nigeria">Nigeria</option>
+                        <option value="usa">USA</option>
+                        <option value="uk">UK</option>
+                    </select><br><br>
+
+                    <label>Gender:</label>
+                    <input type="radio" name="gender" value="male" required> Male
+                    <input type="radio" name="gender" value="female" required> Female<br><br>
+
+                    <label for="interests">Interests:</label><br>
+                    <input type="checkbox" name="interests" value="coding"> Coding<br>
+                    <input type="checkbox" name="interests" value="music"> Music<br>
+                    <input type="checkbox" name="interests" value="sports"> Sports<br><br>
+                </fieldset>
+
+                <input type="submit" value="Register">
+            </form>
+        </section>
+    </div>
+</body>
+</html>
